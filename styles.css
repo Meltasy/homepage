@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'roboto-slab-light';
+    src:
+        url('fonts/robotoslab-light-webfont.woff') format('woff'),
+        url('fonts/robotoslab-light-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --text-color: #01010D;
+    --background-color: #D4D4F0;
+    --primary-color: #353578;
+    --primary-color-shadow: #7474AE;
+    --secondary-color: #522D74;
+    --tertiary-color: #28596C;
+}
+
+body {
+    font-family: 'roboto-slab-light', 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    /* Check how to add max screen size and recenter the contents of the page ...
+    max-width: 1800px; */
+}
+
+img {
+    box-shadow: 5px 5px 5px var(--primary-color-shadow);
+}
+
+.profile,
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile {
+    background: linear-gradient(to bottom right, var(--primary-color) 50%, var(--background-color) 50%)
+}
+
+.about {
+    background-color: var(--background-color);
+    max-width: 600px;
+    height: min-content;
+    margin: 20px;
+    box-shadow: 5px 5px 5px var(--primary-color-shadow);
+}
+
+.contact {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
+
+.profile > div,
+.contact > div {
+    padding: 0 20px;
+}
+
+.profile img {
+    max-width: 250px;
+    height: auto;
+}
+
+.contact img {
+    max-width: 400px;
+    height: auto;
+}
+
+.contact i {
+    font-size: 1.5rem;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.links {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.about .links {
+    justify-content: flex-end;
+}
+
+.links > i {
+    font-size: 2.5rem;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+.content > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project > img {
+    max-width: 300px;
+    height: auto;
+}
