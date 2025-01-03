@@ -12,6 +12,7 @@
     --background-color: #D4D4F0;
     --primary-color: #353578;
     --primary-color-shadow: #7474AE;
+    --primary-color-opacity: rgba(53, 53, 120, 0.5);
     --secondary-color: #522D74;
     --tertiary-color: #28596C;
 }
@@ -21,8 +22,8 @@ body {
     font-size: 16px;
     color: var(--text-color);
     background-color: var(--background-color);
-    /* Check how to add max screen size and recenter the contents of the page ...
-    max-width: 1800px; */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 img {
@@ -33,39 +34,59 @@ img {
 .contact {
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
 }
 
 .profile {
     background: linear-gradient(to bottom right, var(--primary-color) 50%, var(--background-color) 50%)
 }
 
+.picture {
+    position: relative;
+    text-align: center;
+}
+
 .about {
     background-color: var(--background-color);
-    max-width: 600px;
-    height: min-content;
-    margin: 20px;
     box-shadow: 5px 5px 5px var(--primary-color-shadow);
+    max-width: 50vw;
+    height: min-content;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+@media (max-width: 450px) {
+    .about {
+        max-width: 100vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .about {
+        max-width: 35vw;
+    }
+}
+
+.profile h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0rem;
+    background-color: var(--primary-color-opacity);
+    color: var(--background-color);
+    width: 100%;
 }
 
 .contact {
+    gap: 2rem;
     color: var(--background-color);
     background-color: var(--primary-color);
-    padding: 20px 0;
 }
 
-.profile > div,
-.contact > div {
-    padding: 0 20px;
-}
-
-.profile img {
-    max-width: 250px;
-    height: auto;
-}
-
+.profile img,
 .contact img {
-    max-width: 400px;
-    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .contact i {
@@ -88,7 +109,7 @@ img {
 }
 
 .content {
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .content > div {
@@ -98,6 +119,6 @@ img {
 }
 
 .project > img {
-    max-width: 300px;
-    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
 }

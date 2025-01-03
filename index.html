@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='viewport' content='width=device-width'>
     <link rel='stylesheet' href='styles.css'>
     <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css' />
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' />
@@ -11,21 +11,21 @@
 <body>
     <div class='profile'>
         <div>
-            <h1>Talulla Robertson</h1>
-            <img 
-                srcset='images/profile-picture-250w.jpg 250w, images/profile-picture-400w.jpg 400w'
-                sizes='(max-width: 600px) 250px, 400px'
-                src='images/profile-picture-400w.jpg'
-                alt='woman with red hair smiling' />
-            <!-- <p>Photo de ThisIsEngineering: https://www.pexels.com/fr-fr/photo/femme-en-debardeur-noir-3861962/</p> -->
+            <div class='picture'>
+                <h1>Talulla Robertson</h1>
+                <picture>
+                    <source media='(max-width: 450px)' srcset='images/profile-picture-200w.jpg' />
+                    <source media='(max-width: 899px)' srcset='images/profile-picture-300w.jpg' />
+                    <source media='(min-width: 900px)' srcset='images/profile-picture-400w.jpg' />
+                    <img src='images/profile-picture-400w.jpg' alt='woman with red hair smiling' />
+                    <!-- <p>Photo de ThisIsEngineering: https://www.pexels.com/fr-fr/photo/femme-en-haut-sans-manches-noir-3861954/</p> -->
+                </picture>
+            </div>
         </div>
-        <div class="about">
+        <div class='about'>
             <h2>About me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat voluptas nesciunt debitis nostrum repudiandae 
-                non voluptates, minima saepe perferendis odio, vitae maxime minus nam temporibus optio. Soluta, eligendi tenetur? 
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique perspiciatis, quia, optio, fugiat aspernatur alias 
-                voluptatibus asperiores incidunt necessitatibus voluptatem in provident? Voluptatum voluptas blanditiis deleniti quas 
-                autem? Iure, et?</p>
+                non voluptates, minima saepe perferendis odio, vitae maxime minus nam temporibus optio. Soluta, eligendi tenetur?</p>
             <div class='links'>
                 <i class='devicon-github-original'></i>&nbsp;
                 <i class='devicon-linkedin-plain'></i>
@@ -36,34 +36,33 @@
         <h2>My work</h2>
         <div>
             <div class='project'>
-                <img src='images/projects.jpg' alt='placeholder image for project'>
-                <!-- <p>Photo de Format: https://www.pexels.com/fr-fr/photo/photo-d-imac-pres-de-macbook-1029757/</p> -->
-                <h4>Project name</h4>
+                <img src='images/battleship-300w.png' alt='computer screen showing a battleship game'>
+                <h4>Battleship</h4>
                 <p>Short description of the project. A couple of sentences will do.</p>
             </div>
             <div class='project'>
-                <img src='images/projects.jpg' alt='placeholder image for project'>
-                <h4>Project name</h4>
+                <img src='images/admin-dashboard-300w.png' alt='computer screen showing an admin dashboard with story summaries'>
+                <h4>Admin dashboard</h4>
                 <p>Short description of the project. A couple of sentences will do.</p>
             </div>
             <div class='project'>
-                <img src='images/projects.jpg' alt='placeholder image for project'>
-                <h4>Project name</h4>
+                <img src='images/weather-app-300w.png' alt='computer screen showing a weather app with the forecast for Paris'>
+                <h4>Weather app</h4>
                 <p>Short description of the project. A couple of sentences will do.</p>
             </div>
             <div class='project'>
-                <img src='images/projects.jpg' alt='placeholder image for project'>
-                <h4>Project name</h4>
+                <img src='images/task-list-300w.png' alt='computer screen showing a task list with multiple entries'>
+                <h4>Task list</h4>
                 <p>Short description of the project. A couple of sentences will do.</p>
             </div>
             <div class='project'>
-                <img src='images/projects.jpg' alt='placeholder image for project'>
-                <h4>Project name</h4>
+                <img src='images/library-300w.png' alt='computer screen showing a bookshelf with information about various books'>
+                <h4>Library</h4>
                 <p>Short description of the project. A couple of sentences will do.</p>
             </div>
             <div class='project'>
-                <img src='images/projects.jpg' alt='placeholder image for project'>
-                <h4>Project name</h4>
+                <img src='images/calculator-300w.png' alt='computer screen showing a colorful calculator'>
+                <h4>Calculator</h4>
                 <p>Short description of the project. A couple of sentences will do.</p>
             </div>
         </div>
@@ -81,12 +80,13 @@
             </div>
         </div>
         <div>
-            <img
-                srcset='images/using-computer-250w.jpg 250w, images/using-computer-600w.jpg 600w'
-                sizes='(max-width: 800px) 250px, 400px'
-                src='images/using-computer-600w.jpg'
-                alt='same woman as previous photo, typing on a computer' />
-            <!-- <p>Photo de ThisIsEngineering: https://www.pexels.com/fr-fr/photo/femme-en-haut-sans-manches-noir-3861954/</p> -->
+            <picture>
+                <source media='(max-width: 450px)' srcset='images/using-computer-250w.jpg' />
+                <source media='(max-width: 899px)' srcset='images/using-computer-375w.jpg' />
+                <source media='(min-width: 900px)' srcset='images/using-computer-500w.jpg' />
+                <img src='images/using-computer-500w.jpg' alt='same woman as previous photo, typing on a computer' />
+                <!-- <p>Photo de ThisIsEngineering: https://www.pexels.com/fr-fr/photo/femme-en-debardeur-noir-a-l-aide-d-un-ordinateur-portable-3861961/</p> -->
+            </picture>
         </div>
     </div>
 </body>
