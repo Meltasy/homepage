@@ -9,85 +9,108 @@
     <title>Homepage</title>
 </head>
 <body>
-    <div class='profile'>
-        <div>
-            <div class='picture'>
-                <h1>Talulla Robertson</h1>
+    <main>
+        <section class='profile'>
+            <div>
+                <div class='picture'>
+                    <h1>Melissa Vialaneix</h1>
+                    <picture>
+                        <source media='(max-width: 450px)' srcset='images/profile-picture-200w.jpg' />
+                        <source media='(max-width: 899px)' srcset='images/profile-picture-300w.jpg' />
+                        <source media='(min-width: 900px)' srcset='images/profile-picture-400w.jpg' />
+                        <img src='images/profile-picture-400w.jpg' alt='woman with red hair smiling' />
+                    </picture>
+                </div>
+            </div>
+            <div class='about'>
+                <h1>About me</h1>
+                <p>I'm looking for a role as a web developer. After 12 years in educational publishing and 8 years teaching, 
+                    I decided that it was time for a new challenge. I was self-employed as a Learning Designer, Product Manager, 
+                    Writer and Editor until recently, when I stopped working to focus on my career transition full time. Having 
+                    dabbled with computer science since university and throughout my career, I felt that web development was the 
+                    right direction to take. Initially, I completed a crash course with Zero to Mastery and am now studying full 
+                    stack web development in JavaScript with The Odin Project.</p>
+                <div class='links'>
+                    <a href="https://github.com/Meltasy"><i class='devicon-github-original'></i></a>&nbsp;
+                    <a href="https://www.linkedin.com/in/vialaneixmelissa/"><i class='devicon-linkedin-plain'></i></a>
+                </div>
+            </div>
+        </section>
+        <section class='content'>
+            <h1>My work</h1>
+            <div>
+                <div class='project'>
+                    <img src='images/battleship-300w.png' alt='computer screen showing a battleship game'>
+                    <h2>Battleship</h2>
+                    <p>A game of Battleship where you play against the computer. I used TDD (Test Driven Development) to create the 
+                        game in JavaScript. The player needs to drag and drop their ships on to their gameboard and the computer has 
+                        a higher IQ than average. Can you beat the computer?</p>
+                </div>
+                <div class='project'>
+                    <img src='images/weather-app-300w.png' alt='computer screen showing a weather app with the forecast for Paris'>
+                    <h2>Weather app</h2>
+                    <p>An app to give you the weather forecast anywhere in the world. I used JavaScript promises with async and await. 
+                        The weather forecast includes options for hourly, 7 days and 15 days. It also has the humidity level - whch I 
+                        find super useful living in the Pays Basque!
+                    </p>
+                </div>
+                <div class='project'>
+                    <img src='images/task-list-300w.png' alt='computer screen showing a task list with multiple entries'>
+                    <h2>Task list</h2>
+                    <p>A task list with options for multiple project lists. I used SOLID principles to organise the project and 
+                        webpack to bundle the files. Tasks can include a title, description, notes, date, time and priority. Projects 
+                        can be set to different color schemes and tasks moved between them.</p>
+                </div>
+                <div class='project'>
+                    <img src='images/library-300w.png' alt='computer screen showing a bookshelf with information about various books'>
+                    <h2>Library</h2>
+                    <p>A book shelf with key information about different books. I used various JavaScript functions and classes. Books 
+                        can be added through a form, and must include a title, author, genre, page count, and whether the book's been 
+                        read. Do you have a book to add?</p>
+                </div>
+                <div class='project'>
+                    <img src='images/admin-dashboard-300w.png' alt='computer screen showing an admin dashboard with story summaries'>
+                    <h2>Admin dashboard</h2>
+                    <p>A full dashboard design using CSS Grid. I used Emmet to write HTML and CSS - it was so quick and easy! I included 
+                        a wide variety of CSS properties, functions, selectors and pseudo-classes to ensure the best possible design. 
+                        Which story would you like to read?</p>
+                </div>
+                <div class='project'>
+                    <img src='images/calculator-300w.png' alt='computer screen showing a colorful calculator'>
+                    <h2>Calculator</h2>
+                    <p>A calculator to work out how valuable I could be for your company. I used HTML, CSS and JavaScript to create, 
+                        design and ensure the functionality of the calculator. You can use floating point numbers, undo your last input 
+                        and choose between using a keyboard or mouse.</p>
+                </div>
+            </div>
+        </section>
+        <section class='contact'>
+            <div>
+                <h1>Contact me</h1>
+                <p>Please get in touch if you're looking for a web developer.</p>
+                <p>Pays Basque, France</p>
+                <!-- <p><i class='bx bxs-phone'></i>&nbsp;123-456-7890</p> -->
+                <p><i class='bx bxs-envelope'></i>&nbsp;melissa.bryant.elt@gmail.com</p>
+                <div class='links'>
+                    <a href="https://github.com/Meltasy"><i class='devicon-github-original'></i></a>&nbsp;
+                    <a href="https://www.linkedin.com/in/vialaneixmelissa/"><i class='devicon-linkedin-plain'></i></a>
+                </div>
+            </div>
+            <div>
                 <picture>
-                    <source media='(max-width: 450px)' srcset='images/profile-picture-200w.jpg' />
-                    <source media='(max-width: 899px)' srcset='images/profile-picture-300w.jpg' />
-                    <source media='(min-width: 900px)' srcset='images/profile-picture-400w.jpg' />
-                    <img src='images/profile-picture-400w.jpg' alt='woman with red hair smiling' />
-                    <!-- <p>Photo de ThisIsEngineering: https://www.pexels.com/fr-fr/photo/femme-en-haut-sans-manches-noir-3861954/</p> -->
+                    <source media='(max-width: 450px)' srcset='images/using-computer-250w.jpg' />
+                    <source media='(max-width: 899px)' srcset='images/using-computer-375w.jpg' />
+                    <source media='(min-width: 900px)' srcset='images/using-computer-500w.jpg' />
+                    <img src='images/using-computer-500w.jpg' alt='same woman as previous photo, typing on a computer' />
                 </picture>
             </div>
-        </div>
-        <div class='about'>
-            <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat voluptas nesciunt debitis nostrum repudiandae 
-                non voluptates, minima saepe perferendis odio, vitae maxime minus nam temporibus optio. Soluta, eligendi tenetur?</p>
-            <div class='links'>
-                <i class='devicon-github-original'></i>&nbsp;
-                <i class='devicon-linkedin-plain'></i>
-            </div>
-        </div>
-    </div>
-    <div class='content'>
-        <h2>My work</h2>
-        <div>
-            <div class='project'>
-                <img src='images/battleship-300w.png' alt='computer screen showing a battleship game'>
-                <h4>Battleship</h4>
-                <p>Short description of the project. A couple of sentences will do.</p>
-            </div>
-            <div class='project'>
-                <img src='images/admin-dashboard-300w.png' alt='computer screen showing an admin dashboard with story summaries'>
-                <h4>Admin dashboard</h4>
-                <p>Short description of the project. A couple of sentences will do.</p>
-            </div>
-            <div class='project'>
-                <img src='images/weather-app-300w.png' alt='computer screen showing a weather app with the forecast for Paris'>
-                <h4>Weather app</h4>
-                <p>Short description of the project. A couple of sentences will do.</p>
-            </div>
-            <div class='project'>
-                <img src='images/task-list-300w.png' alt='computer screen showing a task list with multiple entries'>
-                <h4>Task list</h4>
-                <p>Short description of the project. A couple of sentences will do.</p>
-            </div>
-            <div class='project'>
-                <img src='images/library-300w.png' alt='computer screen showing a bookshelf with information about various books'>
-                <h4>Library</h4>
-                <p>Short description of the project. A couple of sentences will do.</p>
-            </div>
-            <div class='project'>
-                <img src='images/calculator-300w.png' alt='computer screen showing a colorful calculator'>
-                <h4>Calculator</h4>
-                <p>Short description of the project. A couple of sentences will do.</p>
-            </div>
-        </div>
-    </div>
-    <div class='contact'>
-        <div>
-            <h2>Contact me</h2>
-            <p>Please get in touch if you'd like to find out more.</p>
-            <p>8 rue de l'Église, Saint-Martin, 67220, France</p>
-            <p><i class='bx bxs-phone'></i>&nbsp;123-456-7890</p>
-            <p><i class='bx bxs-envelope'></i>&nbsp;talullarobertson@fake.gmail.com</p>
-            <div class='links'>
-                <i class='devicon-github-original'></i>&nbsp;
-                <i class='devicon-linkedin-plain'></i>
-            </div>
-        </div>
-        <div>
-            <picture>
-                <source media='(max-width: 450px)' srcset='images/using-computer-250w.jpg' />
-                <source media='(max-width: 899px)' srcset='images/using-computer-375w.jpg' />
-                <source media='(min-width: 900px)' srcset='images/using-computer-500w.jpg' />
-                <img src='images/using-computer-500w.jpg' alt='same woman as previous photo, typing on a computer' />
-                <!-- <p>Photo de ThisIsEngineering: https://www.pexels.com/fr-fr/photo/femme-en-debardeur-noir-a-l-aide-d-un-ordinateur-portable-3861961/</p> -->
-            </picture>
-        </div>
-    </div>
+        </section>
+        <footer>
+            <p>Please note that photos are placholders. Thanks to ThisIsEngineering for 
+                <a href='https://www.pexels.com/fr-fr/photo/femme-en-haut-sans-manches-noir-3861954/'>profile photo</a> and 
+                <a href='https://www.pexels.com/fr-fr/photo/femme-en-debardeur-noir-a-l-aide-d-un-ordinateur-portable-3861961/'>contact photo</a>.
+            </p>
+        </footer>
+    </main>
 </body>
 </html>
